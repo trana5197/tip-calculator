@@ -6,7 +6,12 @@ export default function Bill({ bill, onSetBill, children }) {
   return (
     <div>
       <label>{children}</label>
-      <input type="number" value={bill} onChange={handleBillChange} />
+      <input
+        type="number"
+        value={bill}
+        onChange={handleBillChange}
+        placeholder="Enter Bill"
+      />
     </div>
   );
 }
